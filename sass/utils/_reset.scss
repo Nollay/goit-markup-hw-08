@@ -1,0 +1,105 @@
+.top-text--light {
+    color: var(--section-text-color);
+}
+
+.title-text--color {
+    color: #212121;
+}
+
+body {
+    color: var(--primory-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.href {
+    display: block;
+    text-decoration: none;
+    padding-top: 32px;
+}
+
+ul,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------Portfolio-css--------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------backdrop--------------- */
+
+
+/* ---------------Form-modal--------------- */
+
+
+
+/* ---------------Form-footer--------------- */

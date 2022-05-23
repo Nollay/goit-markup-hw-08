@@ -1,0 +1,107 @@
+.navigation {
+    background-color: #FFFFFF;
+    .link {
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+    
+        display: block;
+        padding-bottom: 32px;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .link:hover,
+    .link:focus {
+        color: var(--accent-color);
+    }
+} 
+
+.navigation__logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+
+.navigation__link {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__icon {
+    margin-right: 10px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+    color: var(--accent-color);
+}
+
+.navigation__link:hover .navigation__icon,
+.navigation__link:focus .navigation__icon {
+    fill: var(--accent-color)
+}
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.navigation__web-logo {
+    color: var(--accent-color);
+}
+
+.navigation__studio-logo {
+    color: #000000;
+}
+
+/* ---------------placing-header--------------- */
+.navigation__list {
+    display: flex;
+    justify-content: center;
+}
+
+.navigation__list .navigation__item {
+    margin-left: 50px;
+}
+
+.navigation__item:first-child {
+    margin-left: 0px;
+}
+
+.navigation__list {
+    display: flex;
+    margin-left: auto;
+}
+
+.navigation__item:first-child {
+    margin-left: 0;
+}   
+
+.flex-header {
+    display: flex;
+    align-items: center;
+}
+

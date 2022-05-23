@@ -1,0 +1,100 @@
+.section-developers {
+    background-color: var(--background-fon-color);
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+    
+        margin-bottom: 50px;
+    }
+}
+
+.developers-team {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.developers p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.team-pdg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+    
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+/* ---------------Иконки-наша-команда--------------- */
+.developers-item+.developers-item {
+    margin-left: 10px;
+}
+
+.developers-icon {
+    display: flex;
+    justify-content: center;
+}
+
+.developers-link {
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,:focus {
+        background-color: var(--accent-color);
+        fill: #ffffff;
+    }
+}
+
+.developers {
+    background-color: #ffffff;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+/* ---------------placing-team--------------- */
+.flex-team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.developers {
+    width: 270px;
+    margin-right: 30px;
+    &:last-child {
+            margin-right: 0;
+    }
+}

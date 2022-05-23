@@ -1,0 +1,18 @@
+@import "./utils/reset";
+@import "./utils/var";
+@import "./utils/active-page";
+@import "./utils/container";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/specifics";
+@import "./components/section-work";
+@import "./components/our-team.scss";
+@import "./components/client";
+@import "./components/footer";
+@import "./components/portfolio-components/filter";
+@import "./components/portfolio-components/overlay";
+@import "./components/backdrop";
+@import "./components/form-modal";
+@import "./components/form-footer";
+

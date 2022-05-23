@@ -1,0 +1,82 @@
+.overlay-text-ptfl {
+    color: var(--section-text-color);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    opacity: 1;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%),
+        0px 4px 4px rgb(0 0 0 / 6%),
+        1px 4px 6px rgb(0 0 0 / 16%);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
+
+.overlay {  
+    overflow: hidden;
+    &:hover:before,
+    &:focus:before {
+        opacity: 1;
+    }
+}
+
+.portfolio-img:hover .overlay-text-ptfl {
+    transform: translateX(0);
+}
+
+/* ---------------placing-portfolio--------------- */
+.flex-filtr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 34px;
+}
+
+.container-pdg {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filtr-element {
+    margin-right: 8px;
+
+}
+
+.filtr-element:last-child {
+    margin-right: 0px;
+}
+
+.prtf-element {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+.flex-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prtf-element:nth-child(3n) {
+    margin-right: 0;
+}
+
+.prtf-element:nth-child(n+7) {
+    margin-bottom: 0px;
+}
