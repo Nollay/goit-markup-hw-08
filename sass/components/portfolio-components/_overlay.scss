@@ -39,39 +39,29 @@
 }
 
 /* ---------------placing-portfolio--------------- */
-.flex-filtr {
+.flex-portfolio {
+    // display: flex;
+    // flex-wrap: wrap;
+}
+
+.prtf-element {
+    width:100%;
+    margin-bottom: 30px;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 34px;
+    flex-direction: column;
+    
 }
 
-.container-pdg {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.filtr-element {
-    margin-right: 8px;
-
-}
 
 .filtr-element:last-child {
     margin-right: 0px;
 }
 
-.prtf-element {
-    width: 370px;
-    margin-right: 30px;
-    margin-bottom: 30px;
-    position: relative;
-}
 
 
-.flex-portfolio {
-    display: flex;
-    flex-wrap: wrap;
-}
+
+
 
 .prtf-element:nth-child(3n) {
     margin-right: 0;

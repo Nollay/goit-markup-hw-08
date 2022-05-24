@@ -1,4 +1,11 @@
 /* ---------------Фильтр--------------- */
+.container-pdg {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+}
+
 .btn-portfolio {
     color: var(--text-color-btn);
     background-color: var(--background-color-btn);
@@ -29,13 +36,27 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
+.flex-filtr {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filtr-element {
+    margin-right: 8px;
+    margin-bottom: 15px;
+}
+
+
 
 .portfolio {
     color: var(--title-text-color);
 
-    font-weight: 700;
+    // font-weight: 700;
+    // font-size: 18px;
+    // line-height:2;
+    // letter-spacing: 0.06em;
     font-size: 18px;
-    line-height:2;
+    line-height: 36px;
     letter-spacing: 0.06em;
 
     margin-bottom: 8px;
@@ -43,9 +64,13 @@
 
 .portfolio-text {
     color: var(--primory-text-color);
-    font-weight: 400;
+    // font-weight: 400;
+    // font-size: 16px;
+    // line-height:1.8;
     font-size: 16px;
-    line-height:1.8;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+
     margin-top: 4px;
     margin-bottom: 0;
 }

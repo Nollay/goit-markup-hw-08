@@ -17,15 +17,12 @@
         margin-top: 10;
         margin-bottom: 0;
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+    }
 }
 
 /* ---------------Особенности-иконки--------------- */
-// .special {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 30px;
-// }
-
 .specifics__icon {
     display: flex;
     align-items: center;
@@ -36,21 +33,25 @@
     margin-bottom: 30px;
     border-radius: 4px;
 
-    @media screen and (min-width: 768px) {
-        // width:354px;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
     }
+    
 }
 
 .specifics__list {
-    margin-bottom: -30px;
+    margin-bottom: -15px;
     @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -30px;
+    justify-content: center;
+    margin-left: -15px;
     }
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
+
+    @media screen and (min-width: 1200px){
+        flex-wrap:nowrap;
+    } 
+    
 }
 
 .specifics__element {
@@ -58,9 +59,15 @@
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) {
-        width: 354px;
+        width: calc( 100% / 2 - 15px);
         margin-left: 15px;
         margin-bottom: 15px;
     }
+    @media screen and (min-width: 1200px) {
+        // width: 270px;
+        width: calc(100% / 4 - 15px);
+    }
 }
+
+
 

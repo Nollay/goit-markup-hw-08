@@ -1,17 +1,27 @@
 .section-developers {
     background-color: var(--background-fon-color);
-
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    padding-top: 60px;
+    padding-bottom: 60px;
     h2 {
         font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+        
+        @media screen and (min-width: 1200px){
         font-size: 36px;
         line-height: 1.16;
         text-align: center;
-    
         margin-bottom: 50px;
+        }
     }
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    
 }
 
 .developers-team {
@@ -87,14 +97,36 @@
 
 /* ---------------placing-team--------------- */
 .flex-team {
-    display: flex;
-    flex-wrap: wrap;
+    margin-bottom: -30px;
+    @media screen and (min-width: 480px){
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -30px;
+    }
+    @media screen and (min-width: 1200px){
+        
+    }
+    
 }
 
 .developers {
-    width: 270px;
-    margin-right: 30px;
-    &:last-child {
-            margin-right: 0;
+    width:100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: 480px) {
+        display:flex;
+        width: calc(100% / 2 - 30px );
+        margin-right: 30px;
     }
+
+    @media screen and (min-width: 1200px){
+        width: calc(100% / 4 - 30px);
+        margin-bottom: 0;
+        &:last-child {
+        margin-right: 0;
+        }
+    }
+    
 }
