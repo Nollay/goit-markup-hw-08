@@ -16,7 +16,7 @@
 </head>
 <body>
 <!--Верхняя линия-->
-<!-- <header class="header">
+<header class="header">
 <div class="container flex-header">
     <nav class="navigation flex-header">
         <a href="" class="href navigation__logo"><span class="navigation__web-logo">Web</span><span class="navigation__studio-logo">Studio</span> </a>
@@ -26,6 +26,12 @@
             <li class="navigation__item"><a href="" class="link href">Контакты</a></li>
         </ul>
     </nav>
+    <button type="button" class="menu-open-btn">
+        <svg class="" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu-mobile"></use>
+        </svg>
+    </button>
+    
     <ul class="navigation__list flex-header">
         <li class="navigation__item"> 
             <a class="href navigation__link" href="mailto:info@devstudio.com">
@@ -43,7 +49,47 @@
         </li>
     </ul>
 </div>
-</header> -->
+
+<div class="mob-menu">
+    <div class="container">
+<button type="button" class="menu-close-btn">
+    <svg class="" width="40" height="40">
+        <use href="./images/icons.svg#icon-close-mobail-menu"></use>
+    </svg>
+</button>
+<ul class="mob-menu__list">
+    <li class="mob-menu__item">
+        <a href="" class="mob-menu-href activ"> Студия</a>
+    </li>
+    <li class="mob-menu__item">
+        <a href="./portfolio.html" class="mob-menu-href">Портфолио</a>
+    </li>
+    <li class="mob-menu__item">
+        <a href="" class="mob-menu-href">Контакты</a>
+    </li>
+</ul>
+<ul class="mob-menu__contact-list">
+    <li class="">
+        <a class="mob-menu__contact" href="mailto:info@devstudio.com">
+            info@devstudio.com
+        </a>
+    </li>
+    <li class="">
+        <a class="mob-menu__contact" href="tel:+38-096-111-11-11">
+            +38 096 111 11 11
+        </a>
+    </li>
+
+    <ul>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>Facebook</li>
+        <li>LinkedIn</li>
+    </ul>
+</ul>
+</div>
+</div>
+</header>
 
 <!--Шапка-->
 <main>
@@ -131,8 +177,22 @@
 <div class="container">
     <h2 class="title-text--color">Наша команда</h2>
     <ul  class="flex-team">
-        <li class="developers"> 
+        <li class="developers">
+        <picture>
+            <source srcset="
+                ./images/team/team_img1.jpg 1x, 
+                ./images/team/team_img1-2x.jpg 2x" 
+                media="(min-width:1200px)" />
+            <source srcset="
+                ./images/team/team_img1.jpg 1x, 
+                ./images/team/team_img1-2x.jpg 2x" 
+                media="(min-width:768px)" />
+            <source srcset="
+                ./images/team/team_img1.jpg 1x, 
+                ./images/team/team_img1-2x.jpg 2x" 
+                media="(min-width:320px)" />
             <img src="./images/team/team_img1.jpg" alt="photo team" width="270">
+            </picture>
             <div class="team-pdg">
                 <h3 class="title-text--color">Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -169,7 +229,21 @@
             </div>
         </li>
         <li class="developers">
-            <img src="./images/team/team_img2.jpg" alt="photo team" width="270">
+            <picture>
+                <source srcset="
+                        ./images/team/team_img2.jpg 1x, 
+                        ./images/team/team_img2-2x.jpg 2x" 
+                        media="(min-width:1200px)" />
+                <source srcset="
+                        ./images/team/team_img2.jpg 1x, 
+                        ./images/team/team_img2-2x.jpg 2x" 
+                        media="(min-width:768px)" />
+                <source srcset="
+                        ./images/team/team_img2.jpg 1x, 
+                        ./images/team/team_img2-2x.jpg 2x" 
+                        media="(min-width:320px)" />
+                <img src="./images/team/team_img2.jpg" alt="photo team" width="270">
+            </picture>
             <div class="team-pdg">
                 <h3 class="title-text--color">Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -206,7 +280,21 @@
             </div>
         </li>
         <li class="developers">
-            <img src="./images/team/team_img3.jpg" alt="photo team" width="270">
+            <picture>
+                <source srcset="
+                        ./images/team/team_img3.jpg 1x, 
+                        ./images/team/team_img3-2x.jpg 2x" 
+                        media="(min-width:1200px)" />
+                <source srcset="
+                        ./images/team/team_img3.jpg 1x, 
+                        ./images/team/team_img3-2x.jpg 2x" 
+                        media="(min-width:768px)" />
+                <source srcset="
+                        ./images/team/team_img3.jpg 1x, 
+                        ./images/team/team_img3-2x.jpg 2x" 
+                        media="(min-width:320px)" />
+                <img src="./images/team/team_img3.jpg" alt="photo team" width="270">
+            </picture>
             <div class="team-pdg">
                 <h3 class="title-text--color">Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -243,8 +331,25 @@
             </div>
         </li>
         <li class="developers">
-        <img src="./images/team/team_img4.jpg" alt="photo team" width="270">
-        <div class="team-pdg">
+            <picture>
+            <source srcset="
+            ./images/team/team_img4.jpg 1x, 
+            ./images/team/team_img4-2x.jpg 2x"
+            media="(min-width:1200px)"
+            />
+            <source srcset="
+            ./images/team/team_img4.jpg 1x, 
+            ./images/team/team_img4-2x.jpg 2x" 
+            media="(min-width:768px)" 
+            />
+            <source srcset="
+            ./images/team/team_img4.jpg 1x, 
+            ./images/team/team_img4-2x.jpg 2x" 
+            media="(min-width:320px)" 
+            />
+            <img src="./images/team/team_img4.jpg" alt="photo team" width="270">
+            </picture>
+            <div class="team-pdg">
             <h3 class="title-text--color">Михаил Ермаков</h3>
             <p>UI Designer</p>
             <ul class="developers-icon">
@@ -284,7 +389,7 @@
 </section> -->
         
 <!-- Постоянные клиенты -->
-<!-- <section class="client">
+<section class="client">
 <div class="container">
     <h2 class="title-text--color">Постоянные клиенты</h2>
     <ul class="client-list">
@@ -332,7 +437,7 @@
         </li>
     </ul>
 </div>
-</section> -->
+</section>
 </main>
 
 <!--Подвал-->

@@ -39,6 +39,14 @@
 .flex-filtr {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 40px;
+    @media screen and (min-width: 480px) {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+        @media screen and (min-width: 480px){
+        margin-bottom: 34px;
+}
 }
 
 .filtr-element {
@@ -51,28 +59,33 @@
 .portfolio {
     color: var(--title-text-color);
 
-    // font-weight: 700;
-    // font-size: 18px;
-    // line-height:2;
-    // letter-spacing: 0.06em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
 
     margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+    font-size: 18px;
+    line-height:2;
+}
 }
 
 .portfolio-text {
     color: var(--primory-text-color);
-    // font-weight: 400;
-    // font-size: 16px;
-    // line-height:1.8;
+    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
 
     margin-top: 4px;
     margin-bottom: 0;
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.8;
+}
+    
 }
 
 .portfolio-img {
@@ -96,8 +109,11 @@
 }
 
 .portfolio-pdg {
-    padding: 20px 24px;
+    padding: 20px 15px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE ;
     border-left: 1px solid #EEEEEE;
+    @media screen and (min-width: 769px) {
+    padding: 20px 24px;
+}
 }

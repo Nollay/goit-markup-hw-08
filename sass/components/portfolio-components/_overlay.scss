@@ -40,8 +40,9 @@
 
 /* ---------------placing-portfolio--------------- */
 .flex-portfolio {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
 }
 
 .prtf-element {
@@ -49,24 +50,28 @@
     margin-bottom: 30px;
     position: relative;
     display: flex;
-    flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 480px) {
+    justify-content: center;
+}
+@media screen and (min-width: 480px) {
+    display: flex;
+    width: calc(50% - 30px);
+    margin-right: 30px;
+}
+@media screen and (min-width: 1200px) {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
 }
 
 
-.filtr-element:last-child {
-    margin-right: 0px;
-}
 
 
 
 
 
 
-.prtf-element:nth-child(3n) {
-    margin-right: 0;
-}
 
-.prtf-element:nth-child(n+7) {
-    margin-bottom: 0px;
-}
