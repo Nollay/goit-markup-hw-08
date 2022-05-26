@@ -1173,7 +1173,6 @@ address {
 }
 
 .mob-menu {
-  position: fixed;
   top: 0;
   left: 0;
   background-color: rgb(218, 230, 230);
