@@ -30,6 +30,10 @@
     transition-property: var(--accent-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 450px) {
+    text-align: center;
+    display: block;
+    }
 }
 
 .footer-contacts a:hover,
@@ -53,6 +57,9 @@ address {
     font-size: 26px;
     line-height: 1.20;
     text-decoration: none;
+    @media screen and (max-width: 450px){
+        text-align: center;
+    }
 }
 
 .studio-footer {
@@ -63,15 +70,46 @@ address {
 .footer-icon {
     display: flex;
     align-items: baseline;
-
+    @media screen and (max-width: 450px){
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+    @media screen and (max-width: 1200px){
+        flex-wrap: wrap;
+    }
+    
 }
 
 .footer-icon-adres {
-    margin-right: 70px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 450px){
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px){
+        margin-right: auto;
+        margin-left: 76px;
+    }
+    @media screen and (min-width: 1200px){
+        margin-right: 70px;
+    }
 }
 
 .footer-icon-party {
-    margin-right: 93px;
+    display: flex;
+        justify-content: center;
+        flex-direction: column;
+    @media screen and (max-width: 450px) {
+    margin-bottom: 60px;
+}
+@media screen and (min-width: 768px){
+    margin-right: 89px;
+}
+@media screen and (min-width: 1200px) {
+    margin-right: 70px;
+}
 }
 
 .footer-icon-party h2 {
@@ -83,6 +121,9 @@ address {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+    text-align: center;
+}
 }
 
 .icon-footer {
@@ -112,4 +153,10 @@ address {
 
 .party-icon:last-child {
     margin-right: 0px;
+}
+////////////////////////////////footer-adaptiv/////////////////@at-root
+.footer-adres {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
