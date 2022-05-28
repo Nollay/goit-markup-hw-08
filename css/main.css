@@ -629,19 +629,17 @@ img {
 
 .client-list {
   display: flex;
-  align-content: center;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-right: -15px;
   margin-bottom: -30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 450px) {
   .client-list {
-    flex-wrap: wrap;
+    flex-basis: 50%;
   }
 }
 
 .client-link {
-  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -677,6 +675,7 @@ img {
   background-color: var(--bcg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  max-width: 1600px;
 }
 
 .footer__web-logo {
