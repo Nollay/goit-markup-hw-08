@@ -52,59 +52,60 @@
             </li>
         </ul>
     </div>
+<div class="mob-menu is-hidden mob-menu__container">
+    <button type="button" class="menu-close-btn">
+        <svg class="" width="40" height="40">
+            <use href="./images/icons.svg#icon-close-mobail-menu"></use>
+        </svg>
+    </button>
+    
+<ul class="mob-menu__list">
+    <li class="mob-menu__item">
+        <a href="./index.html" class="mob-menu-href "> Студия</a>
+    </li>
+    <li class="mob-menu__item">
+        <a href="./portfolio.html" class="mob-menu-href activ">Портфолио</a>
+    </li>
+    <li class="mob-menu__item">
+        <a href="" class="mob-menu-href">Контакты</a>
+    </li>
+</ul>
 
-    <div class="mob-menu is-hidden">
-        <div class="container">
-            <button type="button" class="menu-close-btn">
-                <svg class="" width="40" height="40">
-                    <use href="./images/icons.svg#icon-close-mobail-menu"></use>
-                </svg>
-            </button>
-            <ul class="mob-menu__list">
-                <li class="mob-menu__item">
-                    <a href="./index.html" class="mob-menu-href "> Студия</a>
-                </li>
-                <li class="mob-menu__item">
-                    <a href="./portfolio.html" class="mob-menu-href activ ">Портфолио</a>
-                </li>
-                <li class="mob-menu__item">
-                    <a href="" class="mob-menu-href">Контакты</a>
-                </li>
-            </ul>
-            <ul class="mob-menu__contact-list">
-                <li class="">
-                    <a class="mob-menu__contact" href="mailto:info@devstudio.com">
-                        +38 096 111 11 11
-                    </a>
-                </li>
-                <li class="">
-                    <a class="mob-menu__mail" href="tel:+38-096-111-11-11">
-                        info@devstudio.com
-                    </a>
-                </li>
-            </ul>
-            <ul class="mob-menu__networks">
-                <li class="mob-menu__href-networks">
-                    <a href="" class="mob-menu__href">Instagram</a>
-                </li>
-                <li class="mob-menu__href-networks">
-                    <a href="" class="mob-menu__href">Twitter</a>
-                </li>
-                <li class="mob-menu__href-networks">
-                    <a href="" class="mob-menu__href">Facebook</a>
-                </li>
-                <li class="mob-menu__href-networks">
-                    <a href="" class="mob-menu__href">LinkedIn</a>
-                </li>
-            </ul>
-        </div>
+<div">
+    <ul class="mob-menu__contact-list">
+        <li class="">
+            <a class="mob-menu__contact" href="mailto:info@devstudio.com">
+                +38 096 111 11 11
+            </a>
+        </li>
+        <li class="">
+            <a class="mob-menu__mail" href="tel:+38-096-111-11-11">
+                info@devstudio.com
+            </a>
+        </li>
+    </ul>
+    <ul class="mob-menu__networks">
+        <li class="mob-menu__href-networks">
+            <a href="" class="mob-menu__href">Instagram</a>
+        </li>
+        <li class="mob-menu__href-networks">
+            <a href="" class="mob-menu__href">Twitter</a>
+        </li>
+        <li class="mob-menu__href-networks">
+            <a href="" class="mob-menu__href">Facebook</a>
+        </li>
+        <li class="mob-menu__href-networks">
+            <a href="" class="mob-menu__href">LinkedIn</a>
+        </li>
+    </ul>
+    </div>
     </div>
 </header>  
 
 <main>
 <!--Фильтр  -->
 <section class="container-pdg">
-<div class="container">
+<div class="container ">
     <ul class="flex-filtr">
         <li class="filtr-element"><button type="button" class="btn-portfolio">Все</button></li>
         <li class="filtr-element"><button type="button" class="btn-portfolio">Веб-сайты</button></li>
@@ -123,11 +124,13 @@
                                     media="(min-width:1200px)" />
                         <source srcset="
                                     ./images/portfolio/project1.jpg 1x, 
-                                    ./images/portfolio/project1.jpg 2x" media="(min-width:768px)" />
+                                    ./images/portfolio/project1-2x.jpg 2x" 
+                                    media="(min-width:768px)" />
                         <source srcset="
                                     ./images/portfolio/project1.jpg 1x, 
-                                    ./images/portfolio/project1.jpg 2x" media="(min-width:320px)" />
-                        <img src="./images/portfolio/project1.jpg" alt="photo team" width="369">
+                                    ./images/portfolio/project1-2x.jpg 2x" 
+                                    media="(min-width:320px)" />
+                        <img src="./images/portfolio/project1.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -150,13 +153,13 @@
                     media="(min-width:1200px)" />
                     <source srcset="
                     ./images/portfolio/project2.jpg 1x, 
-                    ./images/portfolio/project2.jpg 2x" 
+                    ./images/portfolio/project2-2x.jpg 2x" 
                     media="(min-width:768px)" />
                     <source srcset="
                     ./images/portfolio/project2.jpg 1x, 
-                    ./images/portfolio/project2.jpg 2x" 
+                    ./images/portfolio/project2-2x.jpg 2x" 
                     media="(min-width:320px)" />
-                    <img src="./images/portfolio/project2.jpg" alt="photo team" width="369">
+                    <img src="./images/portfolio/project2.jpg" alt="photo team" >
                 </picture>
                 <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -179,13 +182,13 @@
                     media="(min-width:1200px)" />
                     <source srcset="
                     ./images/portfolio/project3.jpg 1x, 
-                    ./images/portfolio/project3.jpg 2x" 
+                    ./images/portfolio/project3-2x.jpg 2x" 
                     media="(min-width:768px)" />
                     <source srcset="
                     ./images/portfolio/project3.jpg 1x, 
-                    ./images/portfolio/project3.jpg 2x" 
+                    ./images/portfolio/project3-2x.jpg 2x" 
                     media="(min-width:320px)" />
-                    <img src="./images/portfolio/project3.jpg" alt="photo team" width="369">
+                    <img src="./images/portfolio/project3.jpg" alt="photo team" >
                 </picture>
                 <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -208,13 +211,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project4.jpg 1x, 
-                        ./images/portfolio/project4.jpg 2x" 
+                        ./images/portfolio/project4-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project4.jpg 1x, 
-                        ./images/portfolio/project4.jpg 2x" 
+                        ./images/portfolio/project4-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project4.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project4.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -237,13 +240,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project5.jpg 1x, 
-                        ./images/portfolio/project5.jpg 2x" 
+                        ./images/portfolio/project5-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project5.jpg 1x, 
-                        ./images/portfolio/project5.jpg 2x" 
+                        ./images/portfolio/project5-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project5.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project5.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -266,13 +269,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project6.jpg 1x, 
-                        ./images/portfolio/project6.jpg 2x" 
+                        ./images/portfolio/project6-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project6.jpg 1x, 
-                        ./images/portfolio/project6.jpg 2x" 
+                        ./images/portfolio/project6-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project6.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project6.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -295,13 +298,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project7.jpg 1x, 
-                        ./images/portfolio/project7.jpg 2x" 
+                        ./images/portfolio/project7-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project7.jpg 1x, 
-                        ./images/portfolio/project7.jpg 2x" 
+                        ./images/portfolio/project7-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project7.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project7.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -324,13 +327,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project8.jpg 1x, 
-                        ./images/portfolio/project8.jpg 2x" 
+                        ./images/portfolio/project8-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project8.jpg 1x, 
-                        ./images/portfolio/project8.jpg 2x" 
+                        ./images/portfolio/project8-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project8.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project8.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -353,13 +356,13 @@
                         media="(min-width:1200px)" />
                         <source srcset="
                         ./images/portfolio/project9.jpg 1x, 
-                        ./images/portfolio/project9.jpg 2x" 
+                        ./images/portfolio/project9-2x.jpg 2x" 
                         media="(min-width:768px)" />
                         <source srcset="
                         ./images/portfolio/project9.jpg 1x, 
-                        ./images/portfolio/project9.jpg 2x" 
+                        ./images/portfolio/project9-2x.jpg 2x" 
                         media="(min-width:320px)" />
-                        <img src="./images/portfolio/project9.jpg" alt="photo team" width="369">
+                        <img src="./images/portfolio/project9.jpg" alt="photo team" >
                     </picture>
                     <p class="overlay-text-ptfl">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все
                     это позволит посетителю получить
@@ -378,8 +381,8 @@
 </main>
 
 <!--Подвал-->
-<footer class="footer">
-    <div class="container footer-icon">
+<footer class="footer container ">
+    <div class=" footer-icon">
         <div class="footer-icon-adres">
             <a href="" class="logo-footer"><span class="footer__web-logo">Web</span><span
                     class="studio-footer">Studio</span> </a>
@@ -438,7 +441,6 @@
                 </div>
             </form>
         </div>
-    </div>
 </footer>
 <script src="./js/menu.js"></script>
 </body>

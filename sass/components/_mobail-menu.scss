@@ -148,3 +148,11 @@
 .is-hidden .mob-menu {
     ransform: translate(-50%, -50%) scale(1);
 }
+
+.mob-menu__container {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
