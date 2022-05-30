@@ -15,6 +15,9 @@
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 9px;
+    @media screen and (max-width: 767px) {
+    text-align: center;
+}
 }
 
 
@@ -31,7 +34,7 @@
     transition-property: var(--accent-color);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 767px) {
     text-align: center;
     display: block;
     }
@@ -58,7 +61,7 @@ address {
     font-size: 26px;
     line-height: 1.20;
     text-decoration: none;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width: 767px){
         text-align: center;
     }
 }
@@ -70,13 +73,22 @@ address {
 
 .footer-icon {
     display: flex;
-    align-items: baseline;
-    @media screen and (max-width: 450px){
+    // align-items: baseline;
+    @media screen and (min-width: 450px) and (max-width: 767px){
+    flex-direction: column;
+    }
+    
+    @media screen and (max-width: 767px){
     flex-wrap: wrap;
     justify-content: center;
+    
     }
     @media screen and (max-width: 1200px){
         flex-wrap: wrap;
+        
+    }
+    @media screen and (min-width: 1200px){
+        justify-content: center;
     }
     
 }
@@ -86,12 +98,12 @@ address {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    @media screen and (max-width: 450px){
+    @media screen and (max-width:767px){
         margin-bottom: 60px;
     }
     @media screen and (min-width: 768px){
         margin-right: auto;
-        margin-left: 76px;
+        // margin-left: 76px;
     }
     @media screen and (min-width: 1200px){
         margin-right: 70px;
@@ -100,14 +112,9 @@ address {
 
 .footer-icon-party {
     display: flex;
-        justify-content: center;
-        flex-direction: column;
-    @media screen and (max-width: 450px) {
-    margin-bottom: 60px;
-}
-@media screen and (min-width: 768px){
-    margin-right: 89px;
-}
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 @media screen and (min-width: 1200px) {
     margin-right: 70px;
 }
