@@ -60,11 +60,11 @@
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .navigation {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .navigation__web-logo {
@@ -108,7 +108,11 @@
   background-color: var(--bcg-color);
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-logo-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-logo-hero.jpg);
   max-width: 1600px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -192,7 +196,7 @@
   justify-content: center;
   height: 120px;
   width: 270px;
-  background: #F5F4FA;
+  background: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -317,7 +321,7 @@
 .developers-link {
   width: 44px;
   height: 44px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -335,7 +339,8 @@
 
 .developers {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -384,7 +389,7 @@
 }
 
 .client-icon {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -396,7 +401,7 @@
   height: 92px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition-property: color;
@@ -420,6 +425,8 @@
   background-color: var(--bcg-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer__web-logo {
@@ -471,7 +478,7 @@ address {
 }
 
 .studio-footer {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-icon {
@@ -526,8 +533,8 @@ address {
 
 /* ---------------Фильтр--------------- */
 :root {
-  --text-color-btn:rgba(33, 33, 33, 1);
-  --background-color-btn:rgba(245, 244, 250, 1);
+  --text-color-btn: rgba(33, 33, 33, 1);
+  --background-color-btn: rgba(245, 244, 250, 1);
 }
 
 .btn-portfolio {
@@ -553,7 +560,8 @@ address {
 .btn-portfolio:focus {
   color: var(--section-text-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio {
@@ -586,15 +594,16 @@ address {
 
 .portfolio-img:hover,
 .portfolio-img:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
 .portfolio-pdg {
   padding: 20px 24px;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .overlay-text-ptfl {
@@ -612,7 +621,8 @@ address {
   transform: translateY(100%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
 }
 
@@ -671,7 +681,7 @@ address {
   margin-right: 0;
 }
 
-.prtf-element:nth-child(n+7) {
+.prtf-element:nth-child(n + 7) {
   margin-bottom: 0px;
 }
 
@@ -710,7 +720,7 @@ address {
   right: 8px;
   width: 30px;
   height: 30px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
@@ -846,7 +856,7 @@ address {
 .checkbox:checked + .checkbox-text .check-icon {
   background-color: var(--accent-color);
   border: none;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 .checkbox:focus + .checkbox-text span {
@@ -854,7 +864,7 @@ address {
 }
 
 .checkbox-text > a {
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .modal-btn {
@@ -887,7 +897,7 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -913,11 +923,11 @@ address {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   padding: 10px 62px 10px 29px;
-  background: #2196F3;
+  background: #2196f3;
   border-radius: 4px;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -941,4 +951,4 @@ address {
 /* ---------------Portfolio-css--------------- */
 /* ---------------backdrop--------------- */
 /* ---------------Form-modal--------------- */
-/* ---------------Form-footer--------------- *//*# sourceMappingURL=main.css.map */
+/* ---------------Form-footer--------------- */ /*# sourceMappingURL=main.css.map */

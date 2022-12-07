@@ -674,6 +674,8 @@ img {
 }
 
 .footer {
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--bcg-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -745,7 +747,7 @@ address {
 }
 
 .studio-footer {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-icon {
